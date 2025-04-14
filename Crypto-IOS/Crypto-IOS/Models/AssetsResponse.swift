@@ -1,4 +1,4 @@
-struct AssetsResponse{
+struct AssetsResponse: Decodable{
     let data:[Asset]
 }
 

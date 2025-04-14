@@ -1,13 +1,15 @@
 import Foundation
 
-struct Asset:Decodable{
+struct Asset:Decodable, Identifiable, Equatable{
     let id: String
     let name: String
     let symbol: String
     let priceUsd: String
-    let changePercent24hr: String
+    let changePercent24Hr: String
     
     
+    
+    /*
     var percentage:Double{
         Double(changePercent24hr) ?? 0
     }
@@ -22,7 +24,7 @@ struct Asset:Decodable{
     
     var iconUrl:URL?{
         URL(string: "https://raw.githubusercontent.com/nomics-project/assets/master/icons/16x16/\(symbol).png")
-    }
+    }*/
     
 }
 

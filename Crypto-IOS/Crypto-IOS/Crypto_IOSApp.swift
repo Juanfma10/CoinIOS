@@ -1,17 +1,10 @@
-//
-//  Crypto_IOSApp.swift
-//  Crypto-IOS
-//
-//  Created by Sistemas on 11/4/25.
-//
-
 import SwiftUI
 
 @main
-struct Crypto_IOSApp: App {
+struct Crypto_iOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AssetList()
         }
     }
 }
